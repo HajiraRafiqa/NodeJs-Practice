@@ -64,3 +64,19 @@ npm update express
 
 Search a Module -
 npm search express
+
+
+
+function statements -- 
+function sayHi()
+{
+  console.log("hi");
+}
+sayHi();
+
+function expression --
+var sayHi = funciton(){}
+{
+  console.log("hi");
+}
+sayHi();
