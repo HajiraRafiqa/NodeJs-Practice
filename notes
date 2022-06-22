@@ -2,3 +2,22 @@ npm - its a package maneger for your code.
 Modules- reuseable code
 Packages- set of modules 
 package.json- contains meta data
+
+
+NPM comes bundled with Node.js
+To verify the same, open console and type the following command and see the result −
+npm --version
+
+update it to the latest version -
+sudo npm install npm -g
+
+Installing Modules using NPM -
+npm install <Module Name>
+
+example - npm install express
+
+global installation - 
+npm install express -g
+
+command to check all the modules installed globally-
+npm ls -g
