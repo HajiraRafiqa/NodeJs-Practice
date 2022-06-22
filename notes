@@ -21,3 +21,25 @@ npm install express -g
 
 command to check all the modules installed globally-
 npm ls -g
+
+
+Attributes of Package.json
+-name − name of the package
+-version − version of the package
+-description − description of the package
+-homepage − homepage of the package
+-author − author of the package
+-contributors − name of the contributors to the package
+-dependencies − list of dependencies. NPM automatically installs all the dependencies mentioned here in the node_module folder of the package.
+-repository − repository type and URL of the package
+-main − entry point of the package
+-keywords − keywords
+
+Uninstalling a Module-
+npm uninstall express
+
+Updating a Module-
+npm update express
+
+Search a Module -
+npm search express
