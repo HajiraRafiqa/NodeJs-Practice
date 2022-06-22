@@ -9,7 +9,6 @@ var adder = function(a,b)
 
 };
 
-
 var pi = 3.142;
 
 module.exports.counter = counter;
