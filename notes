@@ -9,8 +9,8 @@ Node.js was developed by Ryan Dahl in 2009 and its latest version is v0.10.36.
 
 
 npm - its a package maneger for your code.
-Modules- reuseable code
-Packages- set of modules 
+Modules- reuseable code.
+Packages- set of modules.
 package.json- contains meta data
 
 
