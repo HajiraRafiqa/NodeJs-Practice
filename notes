@@ -80,3 +80,5 @@ var sayHi = funciton(){}
   console.log("hi");
 }
 sayHi();
+
+require -- used to include modules that exists in different modules. 
