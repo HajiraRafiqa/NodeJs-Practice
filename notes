@@ -63,7 +63,7 @@ Updating a Module-
 npm update express
 
 Search a Module -
-npm search express
+npm search express  // express- it is a nodejs web app framework that provides feature for web n moblie apps 
 
 
 
@@ -82,3 +82,5 @@ var sayHi = funciton(){}
 sayHi();
 
 require -- used to include modules that exists in different modules. 
+
+modules -- they are blocks of code or single or collection of files used for specific functions.
