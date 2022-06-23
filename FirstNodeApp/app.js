@@ -19,9 +19,22 @@ var timer = setInterval(function()
 // Display directory names and filename
 console.log(__dirname);
 console.log(__filename);
-*/
+
 
 // Modules
 var stuff = require("./stuff");
 
 console.log(stuff.counter(["asd", "ahdbd", "sjbsd", "njb"])); 
+
+*/
+
+var events = require("events");
+var myEmitter = new events.EventEmitter();
+
+myEmitter.on("someEvent", function(msg)
+{
+    console.log(msg);
+
+});
+
+myEmitter.emit("someEvent", "The event was emitted");
