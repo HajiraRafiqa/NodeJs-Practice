@@ -1,6 +1,7 @@
 /*
-var time = 0;
 
+// Create a timer that counts time until 5 seconds
+var time = 0;
 
 var timer = setInterval(function() 
 {
@@ -15,11 +16,12 @@ var timer = setInterval(function()
 
 
 
-
+// Display directory names and filename
 console.log(__dirname);
 console.log(__filename);
 */
 
+// Modules
 var stuff = require("./stuff");
 
 console.log(stuff.counter(["asd", "ahdbd", "sjbsd", "njb"])); 
