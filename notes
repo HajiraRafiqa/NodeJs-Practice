@@ -84,3 +84,5 @@ sayHi();
 require -- used to include modules that exists in different modules. 
 
 modules -- they are blocks of code or single or collection of files used for specific functions.
+EventEmitter -- it is used to handle events.
+emit-- function of EventEmiter object.
