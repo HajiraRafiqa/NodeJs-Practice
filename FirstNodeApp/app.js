@@ -79,7 +79,7 @@ abc.emit("speak", "Hello All!!");
 //fs.writeFileSync("writeMe.txt", readMe);
 
 
-var fs = require("fs");
+//var fs = require("fs");
 
 /*
 fs.mkdir("stuff", function()
@@ -90,10 +90,22 @@ fs.mkdir("stuff", function()
         fs.promises.writeFile("./stuff/writeMe.txt", data)
     });
 });
-*/
+
 
 fs.promises.unlink("./stuff/writeMe.txt", function()
 {
     fs.rmdir("stuff");
 });
 
+*/ 
+
+var http = require("http");
+
+var server = http.createServer(function(req, res)
+{
+    res.writeHead(200, {"Content-Type": "text/plain"});
+    res.end("Hey all!!");
+});
+
+server.listen(3000, "127.0.0.1");
+console.log("Hey ya! I'm listening on post 3000 ")
