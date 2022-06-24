@@ -97,15 +97,28 @@ fs.promises.unlink("./stuff/writeMe.txt", function()
     fs.rmdir("stuff");
 });
 
-*/ 
+
 
 var http = require("http");
 
 var server = http.createServer(function(req, res)
 {
+    console.log("request was made: " + req.url);
     res.writeHead(200, {"Content-Type": "text/plain"});
     res.end("Hey all!!");
 });
 
 server.listen(3000, "127.0.0.1");
 console.log("Hey ya! I'm listening on post 3000 ")
+*/ 
+
+var http = require("http");
+var fs = require("fs");
+
+var myReadStream = fs.createReadStream(__dirname, "/readMe.txt");
+
+myReadStream.on("data", function(chunk)
+{
+    console.log("new chunk recieved:");
+    console.log(chunk); 
+});
