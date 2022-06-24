@@ -68,24 +68,32 @@ people.forEach(function(person)
 
 abc.emit("speak", "Hello All!!");
 
-
-
-var fs = require("fs");
-
-var readMe = fs.readFileSync("readMe.txt", "utf8");
-
-fs.writeFileSync("writeMe.txt", readMe);
-
 */
 
+//var fs = require('fs');
+
+//fs.promises.unlink('writeMe.txt')
+
+//var readMe = fs.readFileSync("readMe.txt", "utf8");
+
+//fs.writeFileSync("writeMe.txt", readMe);
+
+
 var fs = require("fs");
 
+/*
 fs.mkdir("stuff", function()
 {
-    fs.readFile("readMe.txt", "utf8", function(err, data)
+    fs.readFile('readMe.txt', 'utf8', function(err, data)
     {
-        fs.writeFile("./stuff/writeMe.txt", data)
+        console.log(data);
+        fs.promises.writeFile("./stuff/writeMe.txt", data)
     });
 });
+*/
 
+fs.promises.unlink("./stuff/writeMe.txt", function()
+{
+    fs.rmdir("stuff");
+});
 
