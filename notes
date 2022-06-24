@@ -87,3 +87,9 @@ require -- used to include modules that exists in different modules.
 modules -- they are blocks of code or single or collection of files used for specific functions.
 EventEmitter -- it is used to handle events.
 emit-- function of EventEmiter object.
+
+Node.js fs.unlink() Method
+The fs.unlink() method is used to remove a file or symbolic link from the filesystem. 
+This function does not work on directories, therefore it is recommended to use fs.rmdir() to remove a directory.
+
+fs.mkdirSync --- it is used to make a directory. 
