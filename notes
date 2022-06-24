@@ -18,6 +18,18 @@ Where Not to Use Node.js?
 It is not advisable to use Node.js for CPU intensive applications.
 
 
+REPL stands for Read Eval Print Loop and it represents a computer environment like a Windows console or Unix/Linux shell where a command is entered and the system responds with an output in an interactive mode. 
+Node.js or Node comes bundled with a REPL environment. It performs the following tasks −
+
+Read − Reads user's input, parses the input into JavaScript data-structure, and stores in memory.
+
+Eval − Takes and evaluates the data structure.
+
+Print − Prints the result.
+
+Loop − Loops the above command until the user presses ctrl-c twice.
+
+The REPL feature of Node is very useful in experimenting with Node.js codes and to debug JavaScript codes.
 
 npm - its a package maneger for your code.
 Modules- reuseable code.
@@ -87,3 +99,9 @@ require -- used to include modules that exists in different modules.
 modules -- they are blocks of code or single or collection of files used for specific functions.
 EventEmitter -- it is used to handle events.
 emit-- function of EventEmiter object.
+
+Node.js fs.unlink() Method
+The fs.unlink() method is used to remove a file or symbolic link from the filesystem. 
+This function does not work on directories, therefore it is recommended to use fs.rmdir() to remove a directory.
+
+fs.mkdirSync --- it is used to make a directory. 
