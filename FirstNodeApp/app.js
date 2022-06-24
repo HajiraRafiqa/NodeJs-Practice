@@ -27,7 +27,7 @@ console.log(stuff.counter(["asd", "ahdbd", "sjbsd", "njb"]));
 
 */
 
- var events = require("events");
+// var events = require("events");
 /*
 var myEmitter = new events.EventEmitter();
 
@@ -68,7 +68,7 @@ people.forEach(function(person)
 
 abc.emit("speak", "Hello All!!");
 
-*/
+
 
 var fs = require("fs");
 
@@ -76,3 +76,8 @@ var readMe = fs.readFileSync("readMe.txt", "utf8");
 
 fs.writeFileSync("writeMe.txt", readMe);
 
+*/
+
+var fs = require("fs");
+
+fs.unlink("writeMe.txt");
