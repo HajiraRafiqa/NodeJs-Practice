@@ -45,6 +45,7 @@ npm ls -g
 
 
 Attributes of Package.json
+
 -name − name of the package
 -version − version of the package
 -description − description of the package
