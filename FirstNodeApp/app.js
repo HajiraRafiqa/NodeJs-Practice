@@ -116,7 +116,7 @@ var http = require("http");
 var fs = require("fs");
 const path = require('path');
 
-var myReadStream = fs.createReadStream(path.join(__dirname, "/readMe.txt"));
+var myReadStream = fs.createReadStream(path.join(__dirname, "/readMe.txt", 'utf8'));
 
 myReadStream.on("data", function(chunk)
 {
