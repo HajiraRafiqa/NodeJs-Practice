@@ -114,8 +114,9 @@ console.log("Hey ya! I'm listening on post 3000 ")
 
 var http = require("http");
 var fs = require("fs");
+const path = require('path');
 
-var myReadStream = fs.createReadStream(__dirname, "/readMe.txt");
+var myReadStream = fs.createReadStream(path.join(__dirname, "/readMe.txt"));
 
 myReadStream.on("data", function(chunk)
 {
