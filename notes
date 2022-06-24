@@ -110,3 +110,8 @@ fs.mkdirSync --- it is used to make a directory.
 buffers --- temporary storage spot for a chunck of data that is being transfered from one place to another 
 the buffer is filled with data. then it is passes along 
 it is used to transfer small chuncks of data at a time.
+
+streams - there are 3 types:
+readable - it allows nodejs to read from a stream
+writeable - it allows nodejs to write from a stream
+duplex - it allows nodejs to read and write from a stream
