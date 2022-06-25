@@ -98,6 +98,12 @@ sayHi();
 require -- used to include modules that exists in different modules. 
 
 modules -- they are blocks of code or single or collection of files used for specific functions.
+
+EventEmitter Class --
+When an EventEmitter instance faces any error, it emits an 'error' event. 
+When a new listener is added, 'newListener' event is fired and when a listener is removed, 'removeListener' event is fired.
+
+EventEmitter provides multiple properties like on and emit. on property is used to bind a function with the event and emit is used to fire an event.
 EventEmitter -- it is used to handle events.
 emit-- function of EventEmiter object.
 
@@ -111,7 +117,34 @@ buffers --- temporary storage spot for a chunck of data that is being transfered
 the buffer is filled with data. then it is passes along 
 it is used to transfer small chuncks of data at a time.
 
+Node provides Buffer class which provides instances to store raw data similar to an array of integers 
+but corresponds to a raw memory allocation outside the V8 heap.
+Buffer class is a global class that can be accessed in an application without importing the buffer module.
+
+Convert Buffer to JSON
+Following is the syntax of the method to convert a Node Buffer into JSON object −
+buf.toJSON()
+
 streams - there are 3 types:
 readable - it allows nodejs to read from a stream
 writeable - it allows nodejs to write from a stream
 duplex - it allows nodejs to read and write from a stream
+
+What are Streams?
+Streams are objects that let you read data from a source or write data to a destination in continuous fashion. In Node.js, there are four types of streams −
+
+Readable − Stream which is used for read operation.
+
+Writable − Stream which is used for write operation.
+
+Duplex − Stream which can be used for both read and write operation.
+
+Each type of Stream is an EventEmitter instance and throws several events at different instance of times. 
+For example, some of the commonly used events are −
+
+data − This event is fired when there is data is available to read.
+
+end − This event is fired when there is no more data to read.
+
+error − This event is fired when there is any error receiving or writing data.
+
