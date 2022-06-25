@@ -98,6 +98,12 @@ sayHi();
 require -- used to include modules that exists in different modules. 
 
 modules -- they are blocks of code or single or collection of files used for specific functions.
+
+EventEmitter Class --
+When an EventEmitter instance faces any error, it emits an 'error' event. 
+When a new listener is added, 'newListener' event is fired and when a listener is removed, 'removeListener' event is fired.
+
+EventEmitter provides multiple properties like on and emit. on property is used to bind a function with the event and emit is used to fire an event.
 EventEmitter -- it is used to handle events.
 emit-- function of EventEmiter object.
 
@@ -110,6 +116,14 @@ fs.mkdirSync --- it is used to make a directory.
 buffers --- temporary storage spot for a chunck of data that is being transfered from one place to another 
 the buffer is filled with data. then it is passes along 
 it is used to transfer small chuncks of data at a time.
+
+Node provides Buffer class which provides instances to store raw data similar to an array of integers 
+but corresponds to a raw memory allocation outside the V8 heap.
+Buffer class is a global class that can be accessed in an application without importing the buffer module.
+
+Convert Buffer to JSON
+Following is the syntax of the method to convert a Node Buffer into JSON object −
+buf.toJSON()
 
 streams - there are 3 types:
 readable - it allows nodejs to read from a stream
