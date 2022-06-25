@@ -1,14 +1,20 @@
-
 var http = require("http");
 var fs = require("fs");
-const path = require('path');
 
-var myReadStream = fs.createReadStream(path.join(__dirname, "/readMe.txt"), 'utf8');
-var myWriteStream = fs.createWriteStream(path.join(__dirname, "/writeMe.txt"));
-
-myReadStream.on("data", function(chunk)
+var server = http.createServer(function(req, res)
 {
-    console.log("new chunk recieved:");
-    myWriteStream.write(chunk);
+    console.log("request was made: " + req.url);
+    res.writeHead(200, {"Content-Type": "application/json"});
+    var obj = 
+    {
+        name : "abc",
+        job : "csd",
+        age : 20
+    }
+    res.end(JSON.stringify(myobj));
 
+    
 });
+
+server.listen(3000, "127.0.0.1");
+console.log("Hey ya! I'm listening on post 3000 ")
