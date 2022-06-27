@@ -113,9 +113,9 @@ This function does not work on directories, therefore it is recommended to use f
 
 fs.mkdirSync --- it is used to make a directory. 
 
-buffers --- temporary storage spot for a chunck of data that is being transfered from one place to another 
+buffers --- temporary storage spot for a chunk of data that is being transfered from one place to another 
 the buffer is filled with data. then it is passes along 
-it is used to transfer small chuncks of data at a time.
+it is used to transfer small chunks of data at a time.
 
 Node provides Buffer class which provides instances to store raw data similar to an array of integers 
 but corresponds to a raw memory allocation outside the V8 heap.
