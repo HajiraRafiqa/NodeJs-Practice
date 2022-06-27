@@ -113,9 +113,9 @@ This function does not work on directories, therefore it is recommended to use f
 
 fs.mkdirSync --- it is used to make a directory. 
 
-buffers --- temporary storage spot for a chunck of data that is being transfered from one place to another 
+buffers --- temporary storage spot for a chunk of data that is being transfered from one place to another 
 the buffer is filled with data. then it is passes along 
-it is used to transfer small chuncks of data at a time.
+it is used to transfer small chunks of data at a time.
 
 Node provides Buffer class which provides instances to store raw data similar to an array of integers 
 but corresponds to a raw memory allocation outside the V8 heap.
@@ -152,5 +152,18 @@ Node implements File I/O using simple wrappers around standard POSIX functions. 
 
 var fs = require("fs")
 Synchronous vs Asynchronous
-Every method in the fs module has synchronous as well as asynchronous forms. Asynchronous methods take the last parameter as the completion function callback and the first parameter of the callback function as error. 
+Every method in the fs module has synchronous as well as asynchronous forms. 
+Asynchronous methods take the last parameter as the completion function callback and the first parameter of the callback function as error. 
 It is better to use an asynchronous method instead of a synchronous method, as the former never blocks a program during its execution, whereas the second one does.
+
+Express ------
+Express is a node js web application framework that provides broad features for building web and mobile applications. 
+It is used to build a single page, multipage, and hybrid web application. 
+It's a layer built on the top of the Node js that helps manage servers and routes.
+
+install -- npm install express
+uninstall -- npm uninstall express
+to add the dependency in the package.json -- npm install express -save
+
+nodemon is a tool that helps develop Node. js based applications by automatically restarting the node application when file changes in the directory are detected. 
+nodemon does not require any additional changes to your code or method of development. nodemon is a replacement wrapper for node .
