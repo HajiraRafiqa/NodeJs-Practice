@@ -11,9 +11,9 @@ app.get("/contact", function(req, res)
 {
     res.send("this is a contactpage")
 });
-app.get("/api", function(req, res)
+app.get("/profile/:id/", function(req, res)
 {
-    res.send("this is a apipage")
+    res.send("This is the page of id: " + req.params.id)
 });
 
 
