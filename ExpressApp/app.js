@@ -4,16 +4,16 @@ var app = express();
 
 app.get("/", function(req, res)
 {
-    res.send("this is a homepage")
+    res.sendfile(__dirname + "/index.html")
 });
 
 app.get("/contact", function(req, res)
 {
-    res.send("this is a contactpage")
+    res.send(__dirname + "./contact.html")
 });
-app.get("/profile/:id/", function(req, res)
+app.get("/profile/:name/", function(req, res)
 {
-    res.send("This is the page of id: " + req.params.id)
+    res.send("This is the page of id: " + req.params.name)
 });
 
 
