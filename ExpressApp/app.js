@@ -16,6 +16,5 @@ app.get("/profile/:name/", function(req, res)
     res.send("This is the page of id: " + req.params.name)
 });
 
-
 app.listen(3000);
 
