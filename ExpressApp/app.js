@@ -4,12 +4,12 @@ var app = express();
 
 app.get("/", function(req, res)
 {
-    res.sendfile(__dirname + "/index.html")
+    res.sendFile(__dirname + "/" + "index.html")
 });
 
 app.get("/contact", function(req, res)
 {
-    res.send(__dirname + "./contact.html")
+    res.sendFile(__dirname + "/" + "contact.html")
 });
 app.get("/profile/:name/", function(req, res)
 {
