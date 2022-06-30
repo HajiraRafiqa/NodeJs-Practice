@@ -17,7 +17,7 @@ app.get("/contact", function(req, res)
 });
 app.get("/profile/:name/", function(req, res)
 {
-    res.render("profile.ejs");
+    res.render("profile.ejs", { person : req.params.name});
 
 });
 
