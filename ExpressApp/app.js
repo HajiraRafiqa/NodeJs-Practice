@@ -17,7 +17,8 @@ app.get("/contact", function(req, res)
 });
 app.get("/profile/:name/", function(req, res)
 {
-    res.render("profile.ejs", { person : req.params.name});
+    var data = {age: 20, job: "dev"}
+    res.render("profile.ejs", { person : req.params.name, data: data});
 
 });
 
