@@ -13,14 +13,14 @@
             color: #fff;
             padding: 30px;
         }
-        h1, h2
+        h1
         {
             font-size: 48px;
             text-transform: uppercase;
             letter-spacing: 2px;
             text-align: center;
         }
-        p, li
+        p
         {
             font-size: 16px;
             text-align: center;
@@ -30,18 +30,9 @@
 <body>
 
     <%- include('partials/nav.ejs') %>
-    
-    <h1>Welcome to the profile of <%= person %> </h1>
-    <p><strong>Age: </strong> <%= data.age %></p>
-    <p><strong>Job: </strong> <%= data.job %></p>
 
-    <h2>Hobbies</h2>
-    <ul>
 
-        <% data.hobbies.forEach(function(item){ %>
-            <li> <%= item %> </li>
-       <% }) %>
-    </ul>
-
+    <h1>Contact Us!</h1>
+    <p>Contact the coolest cats on the internet.. just right here!!</p>
 </body>
 </html>
