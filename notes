@@ -167,3 +167,7 @@ to add the dependency in the package.json -- npm install express -save
 
 nodemon is a tool that helps develop Node. js based applications by automatically restarting the node application when file changes in the directory are detected. 
 nodemon does not require any additional changes to your code or method of development. nodemon is a replacement wrapper for node .
+
+EJS (Embedded JavaScript Templating) is one of the most popular template engines for JavaScript. 
+As the name suggests, it lets us embed JavaScript code in a template language that is then used to generate HTML.
+
