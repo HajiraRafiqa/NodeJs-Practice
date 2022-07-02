@@ -2,7 +2,7 @@ module.exports = function(app)
 {
     app.get("/todo", function(req, res)
     {
-
+        res.render("todo")
     });
 
     
@@ -13,7 +13,7 @@ module.exports = function(app)
 
     app.delete("/todo", function(req, res)
     {
-        
+
     });
 
 };
