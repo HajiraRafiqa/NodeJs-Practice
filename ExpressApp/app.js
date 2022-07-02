@@ -1,8 +1,13 @@
-var express = require("express");
+//var express = require("express");
 
+const express = require("express");
+const app = express();
+const path = require("path");
 
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
 
-var app = express();
+//var app = express();
 
 app.set("view engine", "ejs");
 
