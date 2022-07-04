@@ -171,3 +171,5 @@ nodemon does not require any additional changes to your code or method of develo
 EJS (Embedded JavaScript Templating) is one of the most popular template engines for JavaScript. 
 As the name suggests, it lets us embed JavaScript code in a template language that is then used to generate HTML.
 
+GeoJSON is a standardized format for representing geographic data in JSON.
+GeoJSON is a format for encoding a variety of geographic data structures. It uses a geographic coordinate reference system. 
