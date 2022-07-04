@@ -173,3 +173,13 @@ As the name suggests, it lets us embed JavaScript code in a template language th
 
 GeoJSON is a standardized format for representing geographic data in JSON.
 GeoJSON is a format for encoding a variety of geographic data structures. It uses a geographic coordinate reference system. 
+
+Mocha is a JavaScript test framework running on Node. js and in the browser.
+Mocha allows asynchronous testing, test coverage reports, and use of any assertion library.
+
+Chai is an assertion library for node and the browser that can be delightfully paired with any javascript testing framework.
+
+istanbul: A Javascript code coverage tool written in JS
+
+Command line tools to run node unit tests "with coverage turned on" and no cooperation whatsoever from the test runner.
+Ability to use as middleware when serving JS files that need to be tested on the browser.
