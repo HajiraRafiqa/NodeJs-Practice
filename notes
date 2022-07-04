@@ -180,6 +180,30 @@ Mocha allows asynchronous testing, test coverage reports, and use of any asserti
 Chai is an assertion library for node and the browser that can be delightfully paired with any javascript testing framework.
 
 istanbul: A Javascript code coverage tool written in JS
-
 Command line tools to run node unit tests "with coverage turned on" and no cooperation whatsoever from the test runner.
 Ability to use as middleware when serving JS files that need to be tested on the browser.
+
+What Do You Mean by Microservices?
+Microservices are a form of service-oriented Node.js architecture in the field of software application development. 
+They are a group of small services interconnected to build a single application with lightweight protocols. 
+Due to the integration of smaller services, the modularity of the single monolithic app improves. 
+
+a few benefits of using microservices: 
+Offers high scalability
+Higher reliability
+More flexible
+Maintainable and testable
+Systematic data organization
+
+You can concentrate more on the development of monofunctional modules by using microservices to create JavaScript applications. 
+The process of application development will turn more agile by the use of microservices. 
+Also, you will not have to deal with the problem of continuous testing. 
+Developing monolithic applications require the deployment of the entire application, along with each update. 
+Similar is not the case with microservices as they are not reliant on the type of framework. 
+Microservices are also not conditional on the technique or programming language used for developing them. 
+
+A Few Major Benefits of Using Node.js
+Codes run faster on the V8 JavaScript Engine. 
+Servers can handle several requests. 
+There is a release of Data into pieces, which eliminates buffering.
+You can develop high-performance and real-time web applications.
